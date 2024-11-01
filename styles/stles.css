@@ -62,6 +62,14 @@
 }
 
 /* hamster welcome */
+.HW-logo {
+    @media (max-width:1240px) {
+        height: 100px;
+        width: 100px;
+
+    }
+}
+
 #hamsterwelcomeimg {
     height: 416px;
     width: 369px;
@@ -99,7 +107,7 @@
     background-image: url(../hotelMarkupAssets/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-   
+
 }
 
 .amenitiestext {
@@ -150,12 +158,15 @@
 #RARbackground {
     background-image: url(../hotelMarkupAssets/hamsterreserve.jpg);
     background-size: cover;
-    
+
     min-height: 521px;
-    
-    
-    
-    
+
+    @media(max-width:900px) {
+        max-width: 0px;
+    }
+
+
+
 }
 
 .RARtextarea {
@@ -166,14 +177,15 @@
 #RARtitlebox {
     background-color: #000324;
     width: 900px;
-    
+
+
 }
 
 #RARtitletext {
     color: #FFFFFF;
     font-family: dosis;
     margin-top: 27px;
-    
+
 }
 
 .RARinputboxtext {
@@ -191,6 +203,7 @@
     font-family: sanpro2;
     color: white;
 }
+
 .bottomfieldbckgrnd {
     background-color: #000324;
 }
@@ -229,31 +242,37 @@
     margin-bottom: 95px;
 }
 
-@media(max-width:370px) {
+@media(max-width:900px) {
+
     #RARrow {
         display: flex;
         flex-direction: column;
-        
+
 
 
     }
+}
+
+@media(max-width:370px) {
 
     #RARtitlebox {
         background-size: cover;
         width: 100%;
         justify-content: center;
-        
-    }
-    #AMrow{
-        display: flex;
-        flex-direction: column;
-        
 
     }
-    .amenitiestext{
+
+    #AMrow {
         display: flex;
         flex-direction: column;
-         
+
+
+    }
+
+    .amenitiestext {
+        display: flex;
+        flex-direction: column;
+
 
     }
 
